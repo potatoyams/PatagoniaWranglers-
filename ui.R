@@ -17,12 +17,13 @@ my.ui <- fluidPage(
                  sidebarPanel(
                    selectInput("crimes", "Notable Crimes", choices = 
                                  c("Homicide", "Prostitution", "Assault", "Robbery", 
-                                   "Trespass", "Pornography", "Threats", "Stolen Property", "Narcotics", "Dui")),
-                   sliderInput("year", "Select Year", min = 2014, max = 2017, value = 2015, sep = "")
+                                   "Trespass", "Threats", "Stolen Property", "Narcotics", "Dui")),
+                   sliderInput("year", "Select Year", min = 2014, max = 2017, value = 2015, sep = ""),
+                   img(src="http://seattlepolice.org/assets/img/precinctmap.png", 
+                       height = "80%", width = "80%")
                    ),
                  mainPanel(
                    plotOutput("heatgraph"),
-                   textOutput("crimeInfo"),
                    plotOutput("distsect")
                    )
                  )
