@@ -72,7 +72,7 @@ my.ui <- fluidPage(
              ),
              tabPanel(
                "Crimecount",
-               titlePanel("Seattle's Crime Count: 2014 - 2017"),
+               titlePanel("Seattle's Total Crime Count: 2014 - 2017"),
                sidebarLayout(
                sidebarPanel(
                  numericInput("min", "Minimum Frequency Crime", 1000, min = 1000)
