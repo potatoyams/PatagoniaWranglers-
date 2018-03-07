@@ -53,7 +53,7 @@ my.ui <- fluidPage(
              ),
              tabPanel(
                "Heatgraph",
-               titlePanel("Notable Crimes in Seattle"),
+               titlePanel("Notable Crimes in Seattle: 2014 - 2017"),
                sidebarLayout(
                  sidebarPanel(
                    selectInput("crimes", "Notable Crimes", choices = 
@@ -72,6 +72,7 @@ my.ui <- fluidPage(
              ),
              tabPanel(
                "Crimecount",
+               titlePanel("Seattle's Crime Count: 2014 - 2017"),
                sidebarLayout(
                sidebarPanel(
                  numericInput("min", "Minimum Frequency Crime", 1000, min = 1000)

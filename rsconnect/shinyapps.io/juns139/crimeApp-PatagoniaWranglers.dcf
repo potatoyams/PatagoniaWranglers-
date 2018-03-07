@@ -5,9 +5,9 @@ account: juns139
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 294790
-bundleId: 1257522
+bundleId: 1257908
 url: https://juns139.shinyapps.io/crimeApp-PatagoniaWranglers/
-when: 1520450550.5619
+when: 1520463219.47306
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: keys.R|README.md
