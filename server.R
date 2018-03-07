@@ -6,7 +6,7 @@ library(ggmap)
 police_data <- read.csv("./data/Seattle_Police_Incident_2014-2017.csv")
 #Getting Map of Seattle using library(ggmap), using google as a source.
 MyMap <- get_map(location = "Seattle, WA", 
-                  source = "google", maptype = "roadmap", crop = FALSE, zoom = 12)
+                  source = "google", maptype = "roadmap", crop = FALSE, zoom = 11)
 my.server <- function(input, output) {
   
   userPoliceData <- reactive({
@@ -46,7 +46,6 @@ my.server <- function(input, output) {
     countedCrimes <- countedCrimesData()
     countedCrimes <- arrange(countedCrimes, desc(Freq))
     totalCrime <- sum(countedCrimes$Freq)
-    options(scipen = 999)
     countedCrimes <- mutate(countedCrimes, Percentage.Of.Crimes = paste(round((Freq/totalCrime * 100), 2), "%", sep = ""))
     countedCrimes
   })

@@ -6,6 +6,7 @@ my.ui <- fluidPage(
              tabPanel(
                "Introduction",
                titlePanel("Introduction"),
+               h6("Kevin Son, Kenny Wu, Oscar Avatare, Ryan Buchmayer"),
                mainPanel(
                  p("With the growth of Seattle to become a major metropolitan area over the 
                    last few years, more and more new people are moving into the area. 
@@ -19,7 +20,7 @@ my.ui <- fluidPage(
                  p(HTML("We discovered a data set containing information on crimes that have occurred 
                    in the City of Seattle between 2014 and 2017, see full dataset 
                    <a href = 'https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Police-Report-Incident/7ais-f98f' target = '_blank'>here</a>. 
-                   This dataset was originally created by XYZ, 
+                   This dataset was originally created by officers in the Seattle Police Department, 
                    who collected the data from the City of Seattle to allow the public to be aware of what is going on in the city.")),
                  h3("Our Audience"),
                  p("Our primary target audience is people who live in Seattle and those who are curious 
@@ -32,12 +33,13 @@ my.ui <- fluidPage(
                  tags$ul("Which districts of Seattle had more crime than others?"),
                  tags$ul("How many crimes in total occurred over the course of the dataset?"),
                  tags$ul("Did certain years have greater prevalence of one crime than another crime?"),
+                 tags$ul("how has the prevelenece/location of a crime changed over time?"),
                  tags$ul("What percentage did each crime constitute of total crime within the City of Seattle??"),
-                 h3("Displaying our Findings/ Our Data Visualizations:"),
+                 h3("Displaying our Findings/Our Data Visualizations:"),
                  p("In order to answer the questions listed above, we created data visualizations that visually 
-                   represent the answers."),
+                   represent the answers:"),
                  h4("Map of Crime & Data Table of Crime by District"),
-                 p("We created a map of XYZ types of crime in Seattle between 2014 and 2017. Our aim was to see visible 
+                 p("We created a map of nine types of crime in Seattle between 2014 and 2017. Our aim was to see visible 
                    differences on our heatmap of the frequency of crimes as well as where they occurred. Additionally, 
                    we created a data table that revealed which crimes occurred in which district.  
                    From this, we will be able to derive insights into which crimes occurred where in the city and with 
@@ -58,7 +60,7 @@ my.ui <- fluidPage(
                                  c("Homicide", "Prostitution", "Assault", "Robbery", 
                                    "Trespass", "Threats", "Stolen Property", "Narcotics", "Dui")),
                    sliderInput("year", "Select Year", min = 2014, max = 2017, value = 2015, sep = ""),
-                   h5("District Sector: "),
+                   h5("District Sector"),
                    img(src="http://seattlepolice.org/assets/img/precinctmap.png", 
                        height = "80%", width = "80%")
                    ),
@@ -101,6 +103,8 @@ my.ui <- fluidPage(
                  Using the scatter plot, our question, “How many crimes in total occurred over the course of the dataset?” is answered: 
                  76,438 incidents of car prowl reported. However, with our selected group of “Notable Crimes”, assault takes first place 
                  with 33,720 incidents reported in 2014-2017."),
+               p("Alongside the scatterplot, there is a table that reads out the total frequencies of each crime including the percentage it represents. 
+                 Thus answering our final question, 'what percentage did each crime constitute of total crime within the City of Seattle?' "),
                h3("Notable Outliers"),
                p("A notable outlier that we saw in our data was that from 2014 to 2017, there is an increase in total reported incidents 
                  that is very noticeable; it can be concluded that either city has become a lot stricter in terms of law enforcement or 
