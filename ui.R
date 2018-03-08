@@ -7,6 +7,7 @@ my.ui <- fluidPage(
                "Introduction",
                titlePanel("Introduction"),
                h6("Kevin Son, Kenny Wu, Oscar Avatare, Ryan Buchmayer"),
+               h6(HTML("<a href = 'https://github.com/potatoyams/PatagoniaWranglers-' target = '_blank'> Github Repo </a>")),
                mainPanel(
                  p("With the growth of Seattle to become a major metropolitan area over the 
                    last few years, more and more new people are moving into the area. 
